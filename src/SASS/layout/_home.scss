@@ -1,4 +1,8 @@
 .header {
+  height: 7rem;
+  background-color: $color-white;
+  border-bottom: $color-grey-light-2;
+
   display: flex;
   font-size: $normal-font-size;
 
@@ -117,5 +121,79 @@
       border-radius: 50%;
       margin-right: 1rem;
     }
+  }
+}
+
+.sidebar {
+  background-color: $color-grey-dark-1;
+
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__side-nav {
+    font-size: $small-font-size;
+    list-style: none;
+    margin-top: 3.5rem;
+
+    &--item {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 3px;
+        background-color: $color-primary;
+        transform: scaleY(0);
+        transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+          background-color 0.1s;
+      }
+
+      &:hover::before,
+      &--active::before {
+        transform: scaleY(1);
+        width: 100%;
+      }
+
+      &:active::before {
+        background-color: $color-primary-light;
+      }
+    }
+
+    &--link:link,
+    &--link:visited {
+      z-index: 1;
+      color: $color-grey-light-1;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: block;
+      padding: 1.5rem 3rem;
+      position: relative;
+
+      display: flex;
+      align-items: center;
+    }
+
+    &--icon {
+      width: 1.75rem;
+      height: 1.75rem;
+      margin-right: 2rem;
+      fill: currentColor;
+    }
+  }
+
+  .legal {
+    font-size: $small-font-size;
+    color: $color-grey-light-4;
+    text-align: center;
+    padding: 2.5rem;
   }
 }
