@@ -210,7 +210,7 @@
 .overview {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid $color-grey-light-2;
+  border-bottom: $line;
 
   &__stars {
     margin-right: auto;

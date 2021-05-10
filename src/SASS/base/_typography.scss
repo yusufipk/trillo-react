@@ -11,3 +11,7 @@ body {
   letter-spacing: 1px;
   padding: 1.5rem 3rem;
 }
+
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}

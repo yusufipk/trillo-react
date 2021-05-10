@@ -4,6 +4,7 @@
 @import "./SASS/abstracts/include-media";
 
 @import "./SASS/components/buttons";
+@import "./SASS/components/components";
 
 @import "./SASS/base/animations";
 @import "./SASS/base/typography";
@@ -11,4 +12,5 @@
 @import "./SASS/base/utilities";
 
 @import "./SASS/layout/layout";
-@import "./SASS/layout/home";
+
+@import "./SASS/pages/home";
