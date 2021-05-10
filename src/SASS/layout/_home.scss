@@ -1,7 +1,7 @@
 .header {
   height: 7rem;
   background-color: $color-white;
-  border-bottom: $color-grey-light-2;
+  border-bottom: 1px solid $color-grey-light-2;
 
   display: flex;
   font-size: $normal-font-size;
@@ -195,5 +195,66 @@
     color: $color-grey-light-4;
     text-align: center;
     padding: 2.5rem;
+  }
+}
+
+.gallery {
+  display: flex;
+
+  &__photo {
+    width: 100%;
+    display: block;
+  }
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $color-grey-light-2;
+
+  &__stars {
+    margin-right: auto;
+    display: flex;
+  }
+
+  &__location {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon-location,
+  &__icon-star {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: $color-primary;
+  }
+
+  &__icon-location {
+    margin-right: 0.1rem;
+  }
+
+  &__rating {
+    background-color: $color-primary;
+    margin-left: 3rem;
+    color: $color-white;
+    padding: 0 2.25rem;
+    align-self: stretch;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__rating-average {
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin-bottom: -4px;
+  }
+
+  &__rating-count {
+    font-size: $small-font-size;
+    text-transform: uppercase;
   }
 }

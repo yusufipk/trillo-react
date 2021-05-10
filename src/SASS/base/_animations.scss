@@ -1,43 +1,16 @@
-@keyframes moveInBottom {
+@keyframes pulsate {
   0% {
-    opacity: 0;
-    transform: translateY(10rem);
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba($color-black, 0.25);
   }
 
   100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-
-  80% {
-    transform: translateX(1rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-
-  80% {
-    transform: translateX(-1rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
+    transform: scale(1);
+    box-shadow: none;
   }
 }
