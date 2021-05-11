@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/trillo-react/static/css/main.6209f2ee.chunk.css",
+    "main.js": "/trillo-react/static/js/main.69746555.chunk.js",
+    "main.js.map": "/trillo-react/static/js/main.69746555.chunk.js.map",
+    "runtime-main.js": "/trillo-react/static/js/runtime-main.7296d469.js",
+    "runtime-main.js.map": "/trillo-react/static/js/runtime-main.7296d469.js.map",
+    "static/css/2.7727b0b7.chunk.css": "/trillo-react/static/css/2.7727b0b7.chunk.css",
+    "static/js/2.0eb51550.chunk.js": "/trillo-react/static/js/2.0eb51550.chunk.js",
+    "static/js/2.0eb51550.chunk.js.map": "/trillo-react/static/js/2.0eb51550.chunk.js.map",
+    "static/js/3.e7b3cfc2.chunk.js": "/trillo-react/static/js/3.e7b3cfc2.chunk.js",
+    "static/js/3.e7b3cfc2.chunk.js.map": "/trillo-react/static/js/3.e7b3cfc2.chunk.js.map",
+    "index.html": "/trillo-react/index.html",
+    "static/css/2.7727b0b7.chunk.css.map": "/trillo-react/static/css/2.7727b0b7.chunk.css.map",
+    "static/css/main.6209f2ee.chunk.css.map": "/trillo-react/static/css/main.6209f2ee.chunk.css.map",
+    "static/js/2.0eb51550.chunk.js.LICENSE.txt": "/trillo-react/static/js/2.0eb51550.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/trillo-react/static/media/chevron-thin-right.288fa9d8.svg",
+    "static/media/font-awesome.min.css": "/trillo-react/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/hotel-1.b766cfcb.jpg": "/trillo-react/static/media/hotel-1.b766cfcb.jpg",
+    "static/media/hotel-2.174fcb5d.jpg": "/trillo-react/static/media/hotel-2.174fcb5d.jpg",
+    "static/media/hotel-3.710a5ec7.jpg": "/trillo-react/static/media/hotel-3.710a5ec7.jpg",
+    "static/media/sprite.4c7b65cf.svg": "/trillo-react/static/media/sprite.4c7b65cf.svg",
+    "static/media/user.d5c7244b.jpg": "/trillo-react/static/media/user.d5c7244b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7296d469.js",
+    "static/css/2.7727b0b7.chunk.css",
+    "static/js/2.0eb51550.chunk.js",
+    "static/css/main.6209f2ee.chunk.css",
+    "static/js/main.69746555.chunk.js"
+  ]
+}
