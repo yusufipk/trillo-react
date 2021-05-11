@@ -1,4 +1,5 @@
 {
+  "homepage": "https://yusufipk.github.io/trillo-react/",
   "name": "trillo",
   "version": "0.1.0",
   "private": true,
@@ -7,6 +8,7 @@
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^3.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
