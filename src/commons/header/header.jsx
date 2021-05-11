@@ -1,6 +1,7 @@
 import logo from "../img/logo.png";
 import sprite from "../img/sprite.svg";
 import user from "../img/user.jpg";
+import "font-awesome/css/font-awesome.min.css";
 
 function Header() {
   return (
@@ -35,6 +36,33 @@ function Header() {
         <div className="header__user-nav--user">
           <img src={user} alt="User" className="header__user-nav--user-photo" />
           <span className="header__user-nav--user-name">Yusuf</span>
+          <ul className="header__hover-list">
+            <li className="header__hover-list-item">
+              <a href="#" className="header__hover-list-item-link">
+                <i class="fa fa-user"></i> My Profile
+              </a>
+            </li>
+            <li className="header__hover-list-item">
+              <a
+                href="https://yusufipek.me"
+                target="_blank"
+                rel="noreferrer"
+                className="header__hover-list-item-link"
+              >
+                <i class="fa fa-globe"></i> My Website
+              </a>
+            </li>
+            <li className="header__hover-list-item">
+              <a
+                href="https://github.com/yusufipk"
+                target="_blank"
+                rel="noreferrer"
+                className="header__hover-list-item-link"
+              >
+                <i class="fa fa-github"></i> Github
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
