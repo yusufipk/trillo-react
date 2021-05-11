@@ -10,6 +10,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 1.5rem 3rem;
+
+  @include media("<small") {
+    font-size: 1.8rem;
+    padding: 1.25rem 2rem;
+  }
 }
 
 .paragraph:not(:last-of-type) {

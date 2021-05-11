@@ -11,6 +11,10 @@
   &__item {
     flex: 0 0 50%;
     margin-bottom: 0.7rem;
+
+    @include media("<smallest") {
+      font-size: 1.3rem;
+    }
   }
 
   &__item::before {
@@ -32,6 +36,10 @@
   display: flex;
   align-items: center;
 
+  &__friends {
+    display: flex;
+  }
+
   &__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -40,7 +48,7 @@
     border: 3px solid $color-white;
   }
   &__photo:not(:last-child) {
-    margin-right: -1.5rem;
+    margin-right: -2rem;
   }
 
   &__count {
@@ -56,6 +64,11 @@
   margin-bottom: 3rem;
   position: relative;
   overflow: hidden;
+
+  @include media("<medium") {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
 
   &__text {
     margin-bottom: 2rem;
@@ -95,6 +108,10 @@
     color: $color-primary;
     font-size: 2.2rem;
     font-weight: 300;
+
+    @include media("<small") {
+      font-size: 0 1.5rem;
+    }
   }
 
   &::before {

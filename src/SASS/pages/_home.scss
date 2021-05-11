@@ -6,6 +6,12 @@
   display: flex;
   font-size: $normal-font-size;
 
+  @include media("<smallest") {
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 12rem;
+  }
+
   // main axis
   justify-content: space-between;
 
@@ -23,6 +29,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include media("<smallest") {
+      order: 1;
+      flex: 0 0 100%;
+      background-color: $color-grey-light-2;
+    }
 
     &--input {
       font-family: inherit;
@@ -137,11 +149,21 @@
     list-style: none;
     margin-top: 3.5rem;
 
+    @include media("<medium") {
+      display: flex;
+      margin: 0;
+    }
+
     &--item {
       position: relative;
 
       &:not(:last-child) {
         margin-bottom: 0.5rem;
+
+        @include media("<medium") {
+          flex: 1;
+          margin-bottom: 0;
+        }
       }
 
       &::before {
@@ -180,6 +202,16 @@
 
       display: flex;
       align-items: center;
+
+      @include media("<medium") {
+        justify-content: center;
+        padding: 2rem;
+      }
+
+      @include media("<small") {
+        flex-direction: column;
+        padding: 1.5rem 0.5rem;
+      }
     }
 
     &--icon {
@@ -187,6 +219,13 @@
       height: 1.75rem;
       margin-right: 2rem;
       fill: currentColor;
+
+      @include media("<small") {
+        margin-bottom: 0.7rem;
+        margin-right: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+      }
     }
   }
 
@@ -195,6 +234,10 @@
     color: $color-grey-light-4;
     text-align: center;
     padding: 2.5rem;
+
+    @include media("<medium") {
+      display: none;
+    }
   }
 }
 
@@ -245,23 +288,39 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @include media("<small") {
+      padding: 0 1.5rem;
+    }
   }
 
   &__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
-    margin-bottom: -4px;
+    margin-bottom: -3px;
+
+    @include media("<small") {
+      font-size: 1.8rem;
+    }
   }
 
   &__rating-count {
-    font-size: $small-font-size;
+    font-size: 1rem;
     text-transform: uppercase;
+
+    @include media("<smallest") {
+      display: none;
+    }
   }
 }
 
 .cta {
   padding: 3.5rem 0;
   text-align: center;
+
+  @include media("<medium") {
+    padding: 2.5rem 0;
+  }
 
   &__book-now {
     font-size: 1.5rem;

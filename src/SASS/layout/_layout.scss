@@ -3,10 +3,20 @@
   margin: 8rem auto;
   background-color: $color-grey-light-2;
   box-shadow: $shadow-blurry;
+
+  @include media("<largest") {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .content {
   display: flex;
+
+  @include media("<medium") {
+    flex-direction: column;
+  }
 }
 
 .hotel-view {
@@ -21,6 +31,14 @@
   background-color: $color-grey-light-1;
   border-bottom: $line;
   font-size: $normal-font-size;
+
+  @include media("<medium") {
+    padding: 3rem;
+  }
+
+  @include media("<small") {
+    flex-direction: column;
+  }
 }
 
 .description {
@@ -29,6 +47,16 @@
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem;
+
+  @include media("<medium") {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
+
+  @include media("<small") {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
 }
 
 .user-reviews {
